@@ -307,7 +307,7 @@ section{
     margin-bottom: 2rem;
  }
 
- .contact form{
+ .contact .form{
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
@@ -315,14 +315,14 @@ section{
     
  }
 
- .contact form .input-box
+ .contact .form .input-box
  {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
    
  }
- .contact form .input-box input , .contact form textarea{
+ .contact .form .input-box input , .contact .form textarea{
     width: 100%;
     font-size: 1.6rem;
     padding: 1.5rem;
@@ -332,15 +332,15 @@ section{
     margin: .7rem;
  }
 
- .contact form .input-box input{
+ .contact .form .input-box input{
     width: 49%;
  }
 
- .contact form textarea{
+ .contact .form textarea{
     resize: none;
  }
 
- .contact form .btn{
+ .contact .form .btn{
     margin-top: 2rem;
     cursor: pointer;
  }

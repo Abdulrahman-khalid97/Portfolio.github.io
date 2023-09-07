@@ -63,3 +63,25 @@ window.onscroll =()=>{
             backDelay:1000,
             loop:true
       });
+
+
+
+      function sendEmail(){
+        
+        if(document.getElementById('full-name').value !='' &&  document.getElementById('email').value !='' && document.getElementById('subject-title').value !='' && document.getElementById('message').value !='')
+        {
+        var params={
+            from_name : document.getElementById('full-name').value,
+            email_id : document.getElementById('email').value,
+            title :document.getElementById('subject-title').value,
+            message : document.getElementById('message').value,
+
+        }
+        
+        console.log('done ! Before');
+        emailjs.send("service_smnxfgm" ,"template_h73scuq" , params).then(function(res){
+            alert("Success !"+res.status);
+            console.log('done ! Inner');
+        })
+    }
+      }
