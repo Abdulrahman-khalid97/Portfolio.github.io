@@ -10,9 +10,7 @@
         
         font-size: 55%;
     }
-    section{
-        
-    }
+
 }
 
 
@@ -71,9 +69,11 @@
 
    .home{
     flex-direction: column;
+    height: 100%;
    }
    .about{
     flex-direction: column;
+    height: 100%;
    }
    .home-content h3{
     font-size: 2.6rem;
@@ -82,7 +82,8 @@
     font-size: 5rem;
    }
    .home-image img{
-    width: 60vh;
+    width: 35vh;
+    margin-bottom: 2rem;
     margin-top: 4rem;
    }
 }

@@ -80,8 +80,18 @@ window.onscroll =()=>{
         
         console.log('done ! Before');
         emailjs.send("service_smnxfgm" ,"template_h73scuq" , params).then(function(res){
-            alert("Success !"+res.status);
+            document.getElementsByClassName('alert')[0].classList.add('active');
             console.log('done ! Inner');
+            setTimeout(()=>{
+                document.getElementsByClassName('alert')[0].classList.remove('active');
+            },10000);
         })
+
     }
+      }
+
+      function close(){
+        document.getElementsByClassName('alert')[0].classList.remove('active');
+        document.getElementsByClassName('alert')[0].classList.add('hide');
+        console.log('close');
       }

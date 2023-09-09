@@ -11,6 +11,7 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/alert-style.css">
 </head>
 <body>
 
@@ -145,6 +146,11 @@
             <!-- <input type="submit" value="Send Message" class="btn" onclick="sendEmail($event)"> -->
         </div>
     </section>
+    <div class="alert hide">
+        <span class="left-icon"><i class='bx bx-mail-send'></i></span>
+        <span class="message">Your Email have sent</span>
+        <span class="close" onclick="close()"><i class='bx bx-x' ></i></span>
+    </div>
 
     <!-- Footer design -->
     <footer class="footer">
