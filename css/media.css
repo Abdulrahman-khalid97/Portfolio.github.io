@@ -62,10 +62,15 @@
     display: block;
    }
    .navbar a{
-    display: block;
     font-size: 2rem;
-    margin: 3rem 0;
+    margin: 3rem auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    }
+
 
    .home{
     flex-direction: column;
@@ -90,8 +95,13 @@
 
 @media (max-width:617px){
 
+    .portfolio{
+
+        height: 100%;
+    }
     .portfolio-container{
         grid-template-columns: 1fr;
+
     }
 
     .contact{
